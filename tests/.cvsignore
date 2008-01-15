@@ -1,0 +1,7 @@
+.deps
+.libs
+Makefile
+Makefile.in
+basic
+test-out
+plain-test

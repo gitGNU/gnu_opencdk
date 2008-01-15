@@ -1,0 +1,110 @@
+
+        OpenCDK - Open Crypto Development Kit v0.6
+        ------------------------------------------
+
+This library provides basic parts of the OpenPGP message format.
+For reference, please read the RFC 2440 document.
+Due to some possible security problems, the library also implements
+parts of the new RFC 4480.
+
+Until the complete migration and the test suite has been finished,
+the status of the project is still *BETA*.
+
+!!! In the current state the library is not thread-safe and thus
+    extra care must be taken in a MT environment !!!!
+    
+
+Primary site for this library
+=============================
+
+The library is no real website yet, but it has a development
+environment which provides mailing lists, a bug tracker, forums
+and other useful facilities. 
+
+URL: http://developer.berlios.de/projects/opencdk/
+
+To download the source or other possible related files use this
+URL: http://developer.berlios.de/project/showfiles.php?group_id=8366
+
+An alternative, this site should be preferred, is:
+http://josefsson.org/gnutls/releases/opencdk/
+
+
+Possible applications for the library
+=====================================
+
+For example GnuTLS uses this library to convert the OpenPGP 
+keys into a generic or better TLS specifc format to use them
+for authentication. In general, this lib can be used to convert
+OpenPGP keys into a native format which can be used in any program
+that supports public key encryption in any way.
+
+Even so the lib is not powerful as a full fledged openPGP application,
+it still can be used for encrypting and decrypting data. With the
+cdk_data_transform() function this can be done directcly on buffers.
+For example in web applications to secure form data or any other user
+data. Or for Instant Messangers to secure the typed message and to
+make sure the text can be only read by the receiver. It might be also
+useful for authentication of data or user sessions.
+
+
+How to correctly start the library
+==================================
+
+There is not much to do before you can use the library, but to make
+sure that all internal structures are completely initialized, the
+application should always use
+  cdk_lib_startup ();
+and in the exit routine of the program
+  cdk_lib_shutdown ();
+to make sure that all global resources and structures are properly
+freed.
+
+WARNING: If opencdk is used in an application which also uses
+         libgcrypt function and especially call some initialisation
+	 function at the begin, extra care must be taken.
+
+
+mingw32 build support
+=====================
+
+The library can be build for the mingw32 system. The autogen
+script can be used for the convience.
+$ ./autogen --build-w32
+
+But you need import libs of libgpg-error and libgcrypt. It
+is also possible to use static libs, but it is not suggested.
+
+By default libz support is not available on mingw32 systems
+and thus the library cannot compress or decompress any data.
+All modern openpgp systems use compression and thus the library
+is pretty useless without libz support, at least for data encryption.
+
+mingw32 and WINE
+================
+
+Currently it is not possible to use the mingw32 build for
+automated build & check procedures. The current code has
+some problems with the W32->Posix mapping that is done in WINE.
+
+
+API documentation
+=================
+
+In the doc/ directory, you can find a HTML-API overview. In the tests/
+directory, you can find some regression tests.
+
+Libraries you'll also need for using all parts:
+libzlib   - ftp.uu.net/pub/archiving/zip/zlib/ (optinal!)
+libgcrypt - ftp.gnupg.org/gcrypt/libgcrypt
+
+
+Contributions
+=============
+
+This library is free software under the terms of the GNU General
+Public License. Anyone is free to redistribute it under the terms
+of COPYING and/or modify it. If you are interested in contributing
+code under the terms above, you are welcome. Check the TODO list for
+items to do. But before please send me a mail to make sure that I or
+any other is working on this item.

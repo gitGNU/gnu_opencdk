@@ -1,0 +1,22 @@
+Here is the list of people I've to thank for. Most of them are the authors
+of the other packages I use for some parts or just people who helped me
+in general.
+
+Adam Langley
+Albert Chin
+Andreas Metzler
+Ivo Timmermans          ivo at o2w.nl
+John Heiden
+Ludovic Courtes
+Mario Lenz 		mario.lenz at gmx.net
+Matthias Drochner
+Nikos Mavroyanopoulos   nmav at gnutls.org
+Simon Josefsson		jas at gnutls.org
+Thomas Klausner
+Weng Liong
+Werner Koch             wk at gnupg.org
+
+
+Thanks to all organizations for offering resources:
+- HELLUG which has provided FTP space for earlier release.
+- The GnuTLS team for providing FTP space for the current releases.

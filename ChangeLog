@@ -1,0 +1,111 @@
+2007-04-14  Timo Schulz  <twoaday@gmx.net>
+
+	* configure.ac [W32]: mingw32 support.
+
+2003-06-22  Timo Schulz  <twoaday@freakmail.de>
+
+	* New directory for the mini RANDOM library (randlib).
+	
+2003-06-21  Timo Schulz  <twoaday@freakmail.de>
+
+	* Released 0.5.1.
+	
+2003-06-21  Timo Schulz  <twoaday@freakmail.de>
+
+	* New directory for the mini CIPHER library (cipherlib).
+	
+2003-05-10  Timo Schulz  <twoaday@freakmail.de>
+
+	* New directory for the mini MD library (mdlib).
+	
+2003-03-25  Timo Schulz  <twoaday@freakmail.de>
+
+	* Released 0.5.0.
+	
+2003-02-10  Timo Schulz  <twoaday@freakmail.de>
+
+	* Released 0.4.5.
+
+	* configure.ac: Removed stpcpy() check because we do not use
+	stpcpy in the code.
+	
+2003-02-08  Timo Schulz  <twoaday@freakmail.de>
+
+	* Released 0.4.4.
+	
+2003-01-24  Timo Schulz  <twoaday@freakmail.de>
+
+	* Released 0.4.3.
+	
+2003-01-23  Timo Schulz  <twoaday@freakmail.de>
+
+	* Remove all libpopt related stuff.
+	
+2003-01-16  Timo Schulz  <twoaday@freakmail.de>
+
+	* Released 0.4.2.
+	
+2003-01-03  Timo Schulz  <twoaday@freakmail.de>
+
+	* Released 0.4.1.
+	
+2003-01-02  Timo Schulz  <twoaday@freakmail.de>
+
+	* configure.ac: Removed unused stuff.
+	We don't use snprintf any longer. The same with mktemp.
+	
+2002-12-27  Timo Schulz  <twoaday@freakmail.de>
+
+	* NEWS: Updated.
+	* AUTHORS: Updated.
+
+2002-12-08  Timo Schulz  <twoaday@freakmail.de>
+
+	* Released 0.4.0.
+	
+2002-12-06  Timo Schulz  <twoaday@freakmail.de>
+
+	* README: Updated file list
+	
+2002-12-03  Timo Schulz  <twoaday@freakmail.de>
+
+	* configure.ac: Bump version to 0.3.99 due to the structural
+	changes in key database code. The next release will be 0.4.0.
+	
+2002-12-01  Timo Schulz  <twoaday@freakmail.de>
+
+	* configure.ac: Check for snprintf.
+	
+2002-11-25  Timo Schulz  <twoaday@freakmail.de>
+
+	* Released 0.3.4.
+	
+2002-11-20  Timo Schulz  <twoaday@freakmail.de>
+
+	* README: Add something like a roadmap to the code.
+	
+2002-11-16  Timo Schulz  <twoaday@freakmail.de>
+
+	* Released 0.3.3.
+	
+2002-11-14  Timo Schulz  <twoaday@freakmail.de>
+
+	* doc/DETAILS: New.
+	
+2002-11-07  Timo Schulz  <twoaday@freakmail.de>
+
+	* Released 0.3.2.
+	
+2002-11-03  Timo Schulz  <twoaday@freakmail.de>
+
+	* doc/gen-doc.sh: New.
+	
+2002-11-02  Timo Schulz  <twoaday@freakmail.de>
+
+	* Released 0.3.1.
+	
+2002-11-01  Timo Schulz  <twoaday@freakmail.de>
+
+	* Begin to port OpenCDK to W32 and other systems.
+	* configure.in: Check for 'pwd.h' header and for 'mkstemp'.
+	

@@ -1,0 +1,82 @@
+2007-10-14  Timo Schulz  <twoaday@gmx.net>
+
+	* t-key.c (test_expired_keys): New.
+	(test_missing_keys): New.
+
+2007-06-11  Timo Schulz  <twoaday@gmx.net>
+
+	* t-support.h (rndpart): New. Add random part to temp file name.
+	(make_tempname): Is now a function without any parameter.
+
+	* t-keydb.c (test_export, test_import): New.
+
+2007-06-06  Timo Schulz  <twoaday@gmx.net>
+
+	* Makefile.am: Adjust tests for W32.
+
+2007-05-11  Timo Schulz  <twoaday@gmx.net>
+
+	* t-misc.c (test_keyserver): Tests for the new URL
+	handling code.
+
+2007-05-04  Timo Schulz  <twoaday@gmx.net>
+
+	* t-support.h: mingw32 support.
+	* t-encr.c (test_lit_no_name): New test to check if
+	literal packets without file names are handled correctly.
+	* basic.c (test_misc_functions): New test for the misc API.
+
+2007-04-30  Timo Schulz  <twoaday@gmx.net>
+
+	* t-encr.c (test_sym_illegal_transform): New. Test illegal
+	packet composition.
+	(test_trans_one_handle): New. Test to handle just a
+	literal packet.
+	
+2007-04-18  Timo Schulz  <twoaday@gmx.net>
+
+	* t-keydb.c (key_search_asc_keyring): New test which uses
+	an asc keyfile as the source.
+	(key_db_stream): Test the new db type code.
+	(key_asc_tmp_read): Test to read a base64 key from a buffer.
+	(key_read_mpi): New test for the mpi retrieve API.
+
+2007-04-14  Timo Schulz  <twoaday@gmx.net>
+
+	* t-misc.c (test_keygen): New. Basic example how to
+	generate keys.
+	* t-key.c (test_kbnode_read_write): New test for reading
+	and writing key nodes to and from the memory.
+
+2007-04-13  Timo Schulz  <twoaday@gmx.net>
+
+	* t-stream.c. Rewritten.
+	* t-keydb.c: New.
+	* newkey.gpg, newkey.sec: New RSA test key pair.
+	* pub.gpg: Now it contains some test keys.
+	* t-sign.c: New test case for detached signature.
+
+2007-03-08  Timo Schulz  <twoaday@gmx.net>
+
+	* t-key.c: New. Regression test for the key management
+	and manipulation routines.
+	    
+2003-01-24  Timo Schulz  <twoaday@freakmail.de>
+
+	* mk-minpg.sh: New. Don't use the lib in /usr/local/lib but
+	the one in ../src/.libs.
+	
+2003-01-02  Timo Schulz  <twoaday@freakmail.de>
+
+	* minpg.c: Small changes due to the new API.
+	
+2002-11-16  Timo Schulz  <twoaday@freakmail.de>
+
+	* minpg.c: Create a dummy binary when popt was not found.
+	Thanks to Nikos who reminded me of it.
+	
+2002-11-02  Timo Schulz  <twoaday@freakmail.de>
+
+	* t-packet.c, t-key.c: Removed. The files contain too much old
+	code. As a regression test, t-stream.c is used and minpg.c as
+	a program which uses a lot of different API's for testing.

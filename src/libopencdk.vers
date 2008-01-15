@@ -1,0 +1,5 @@
+OPENCDK_6
+{
+  global: _cdk*; cdk*;
+  local: *;
+};

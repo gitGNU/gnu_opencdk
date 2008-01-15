@@ -1,0 +1,33 @@
+[for the 0.6.x branch]
+
+* (important) noted by Nikos: 
+  The keydb search is not thread safe because. Needs a review.
+  Actually other parts suffer from the same problem. 
+  Because the keydb is only open once, concurrent key readings will
+  result in an unpredictable result.
+
+* at several places the internal structure of the code needs to
+  be revamped.
+  
+* cdk_file_decrypt and friends should return the output file name
+  because it might be possible that the real output is different
+  than the suggested. Or we need to force the code to use the given
+  output file.
+  
+* stream.c: enhance the EOF detection
+
+* We still need more tests, especially for the 'exotic' and less
+  used interfaces and functions.
+
+
+** Things we need to migrate stepwise ***
+The old stream code has lots of problems. And most of the 
+complexity is not needed. With the new reader and writer
+concept, we can add new filters more easily and there are
+no temp files or multiple runs on the same data.
+
+ 
+** Known problems to fix **
+
+* some parts of the code does not seem to work on W32 or 
+  better it probably needs some adjustments.

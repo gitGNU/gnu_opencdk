@@ -1,0 +1,15 @@
+2007-06-09  Timo Schulz  <twoaday@gmx.net>
+
+	* read-buffer.c (buffer_read, buffer_release, buffer_init):
+	New.
+
+2007-05-27  Timo Schulz  <twoaday@gmx.net>
+
+	* write-cipher.c (cipher_write): Rewritten.
+	(cipher_flush): Adjusted.
+	(cipher_writer_new): New param for the bufsize.
+	Change all callers.
+
+2007-05-26  Timo Schulz  <twoaday@gmx.net>
+
+	* write-cipher.c (cipher_write, cipher_flush): New.

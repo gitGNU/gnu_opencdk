@@ -1,0 +1,9 @@
+
+This is the new I/O library for the opencdk library.
+
+It is not used yet but it will replace the old stream
+interfaces somewhere in the future.
+
+Tests can be found in the tests/nio folder, which is also
+an example how to use the new interface.
+

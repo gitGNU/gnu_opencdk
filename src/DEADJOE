@@ -1,0 +1,41 @@
+
+*** These modified files were found in JOE when it aborted on Tue Dec 18 23:04:21 2007
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+</td></tr>\n<tr><th>
+:</th><td>
+mgs_session_
+<term>
+<varlistentry>
+</varlistentry>
+<term>
+</term>
+<listitem><para>
+</para></listitem>
+
+*** File '(Unnamed)'
+gnutls_ope
+_opep
+openpgp
+pgp.c
+extra
+init_e
+_cdk_filter_cipher
+_cdk_filter_cipher
+compr
+_cdk_memistr
+s2k
+
+*** File '(Unnamed)'
+Makefile.am
+Makefile.am
+cli.c
+serv.c
+tls_test.c
+stream.c
+opencdk/stream.c
+misc.c
+misc.c
+Makefile.am
+seskey.c

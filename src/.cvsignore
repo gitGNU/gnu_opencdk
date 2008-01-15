@@ -1,0 +1,9 @@
+.deps
+.libs
+Makefile
+Makefile.in
+libopencdk.la
+opencdk-config
+*.lo
+opencdk.h
+opencdk.pc

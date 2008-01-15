@@ -1,0 +1,19 @@
+Maintainer and author:
+Timo Schulz <twoaday@gmx.net>
+
+Simon Josefsson
+ various cleanups and he integrated patches sent
+ by other users. Also scripts and changes for
+ the autoconf environment and mingw32.
+
+Nikos Mavroyanopoulos
+ contributed a lot of smaller patches for
+ the autoconf environment and the code.
+
+GPLed code from other people that is used in OpenCDK:
+
+Free Software Foundation
+ code based on GnuPG.
+
+Eric S. Raymond
+ base64 routines in armor.c.
